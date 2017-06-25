@@ -1,0 +1,542 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=====================
+Main styles
+=====================
+*/
+
+body {
+	height: 100%;
+	font: 12px Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	border-top: 4px solid #000;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+header,
+.under-header,
+section,
+.portfolio,
+.updates {
+	width: 960px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*
+=====================
+Header
+=====================
+*/
+
+header {
+	border-bottom: 1px solid #c0c0c0;
+	height: 138px;
+}
+
+.logo {
+	float: left;
+	margin-top: 21px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #fe9b00;
+}
+
+.logo p {
+	position: relative;
+	right: 58px;
+	font: 700 90px/75px "Ubuntu", Arial,  sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	height: 100px;
+	line-height: 95px;
+}
+
+.logo-circle {
+	margin-left: 65px;
+	height: 78px;
+	width: 78px;
+	background-color: rgba(254, 254, 1, 0.3);
+	border-radius: 50%;
+}
+
+header nav ul {
+	float: right;
+	margin: 31px 0;
+}
+
+header nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0 30px 0 30px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 75px;
+	text-transform: uppercase;
+}
+
+header nav li:last-child {
+	padding-right: 0;
+}
+header nav a {
+	color: #fe9b00;
+}
+
+header nav a:hover {
+	color: #000;
+}
+
+/*
+=====================
+Header end
+=====================
+
+--------------------------------------------
+
+=====================
+Under header
+=====================
+*/
+
+.under-header {
+	position: relative;
+	height: 380px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #ee7600;
+	background: linear-gradient(to top right, #fd9800, #e35300);
+	overflow: hidden;
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.under-header h1 {
+	font: bold 85px/75px "Ubuntu", Arial,  sans-serif;
+	color: #f4f4f4;
+	text-shadow: #ce6b02 3px 3px 3px;
+	text-transform: uppercase;
+	margin: 40px 0 0 30px ;
+	display: inline-block;
+	width: 450px;
+	letter-spacing: 7px;
+}
+
+.btn {
+	margin: 34px 0 0 35px;
+	height: 44px;
+	width: 442px;
+	background: #090909;
+}
+
+.btn p {
+	display: inline-block;
+	position: relative;
+	bottom: 16px;
+	font-size: 15px;
+	line-height: 75px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #999898;
+	margin-left: 13px;
+}
+
+.btn a {
+	position: relative;
+	bottom: 16px;
+	margin-left: 80px;
+	font-size: 15px;
+	line-height: 75px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fe9b00;
+}
+
+.btn a:hover {
+	color: #fff;
+}
+
+
+.under-header img {
+	display: block;
+}
+
+.big-picture {
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.shadow-box {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 303px;
+	width: 327px;
+	box-shadow: #444 -10px 5px 25px;
+}
+
+.small-picture {
+	position: absolute;
+	right: 140px;
+	bottom: 0;
+	box-shadow: #5c2f06 -10px 5px 25px;
+}
+
+.header-big-picture {
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+.header-small-picture {
+	position: absolute;
+	right: 140px;
+	top: 77px;
+}
+
+/*
+=====================
+Under header end
+=====================
+
+--------------------------------------------
+
+=====================
+Article
+=====================
+*/
+
+.container {
+	height: 269px;
+	border-top: 1px solid #c0c0c0; 
+	margin-bottom: 10px;
+}
+
+.mini-section {
+	width: 283px;
+	float: left;
+	margin-left: 55px;
+}
+
+.mini-section:first-child {
+	margin-left: 0;
+}
+
+.mini-section h2 {
+	font: bold 18px/50px Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 15px;
+	border-bottom: 6px solid #090909;
+}
+
+.text-container {
+	margin-top: 20px;
+}
+
+.mark img {
+	display: block;
+	margin-top: 45px;
+}
+
+.mark img:first-child {
+	margin-top: 0;
+}
+
+.mini-section p {
+	line-height: 20px;
+	color: #5d5d5d;
+}
+
+.mini-section a {
+	font-weight: bold;
+	line-height: 35px;
+	color: #fe9b00;
+	text-transform: uppercase;
+}
+
+.mini-section a:hover {
+	color: #000;
+}
+
+.mini-section a span {
+	color: #000;
+}
+
+cite {
+	font-style: italic;
+	color: #000;
+}
+.mini-section cite a {
+	text-transform: none;
+	color: #000;
+	font-weight: 300;
+}
+
+.mini-section cite a:hover {
+	text-decoration: underline;
+}
+
+.mark {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.middle-text {
+	display: inline-block;
+	width: 250px;
+	margin-left: 5px;
+}
+
+.middle-text p {
+	line-height: 13px;
+	margin-top: 20px;
+}
+
+.middle-text p:first-child {
+	margin-top: 0;
+}
+
+/*
+=====================
+Article end
+=====================
+
+--------------------------------------------
+
+=====================
+Portfolio
+=====================
+*/
+
+.portfolio {
+	border-top: 1px solid #c0c0c0;
+	margin-bottom: 40px;
+}
+
+.portfolio h2 {
+	font: bold 18px/50px Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.img {
+	position: relative;
+	display: inline-block;
+	margin-left: 30px;
+	height: 135px;
+}
+
+.img:first-child {
+	margin-left: 0;
+}
+
+.view {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 62px;
+	height: 21px;
+	background: #fe9b00;
+}
+
+.view p {
+	margin-top: 4px;
+	margin-left: 12px;
+	}
+
+.view a {
+	color: #090909;
+	text-transform: uppercase;
+	font-weight: bold;
+}	
+
+.view a:hover {
+	color: #fff;
+}
+
+/*
+=====================
+Portfolio end
+=====================
+
+-------------------------------------------- 
+
+=====================
+Blog and social
+=====================
+*/
+
+.blog-social {
+	border-top: 1px solid #c0c0c0;
+	margin-bottom: 45px;
+}
+
+.blog-social h2 {
+	font: bold 12px/50px Arial, sans-serif;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+.blog-social p {
+	line-height: 20px;
+	color: #5d5d5d;
+}
+
+.blog {
+	display: inline-block;
+	width: 660px;
+}
+
+.social {
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 80px;
+}
+
+.icons a {
+	display: inline-block;
+	margin-left: 14px;
+}
+.icons a:first-child {
+	margin-left: 0;
+}
+
+
+/*
+=====================
+Blog and social end
+=====================
+
+--------------------------------------------  
+
+=====================
+Footer
+=====================
+*/
+
+footer {
+	height: 101px;
+	background: #e2e2e2;
+}
+
+.footer-nav {
+	float: left;
+}
+
+.footer-nav li {
+	display: inline-block;
+	padding: 0 4px 0 4px;
+	font-size: 12px;
+	line-height: 12px;
+	border-right: 1px solid #5d5d5d;
+	margin-top: 34px;
+}
+
+.footer-nav li:last-child {
+	border-right: none;
+}
+.footer-nav li:first-child {
+	padding-left: 0;
+}
+
+.footer-nav a {
+	color: #5d5d5d;
+}
+
+.footer-nav a:hover {
+	color: #000;
+}
+
+.footer-nav p {
+	line-height: 20px;
+	color: #5d5d5d;
+}
+
+footer .wrapper .logo {
+	float: right;
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+	background-color: #fe9b00;
+	margin-right: 55px;
+}
+
+footer .wrapper .logo p {
+	position: relative;
+	right: 37.18px;
+	font: 700 60px/75px "Ubuntu", Arial,  sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	height: 64px;
+	line-height: 61px;
+}
+
+footer .wrapper  .logo-circle {
+	margin-left: 41.67px;
+	height: 50px;
+	width: 50px;
+	background-color: rgba(254, 254, 1, 0.3);
+	border-radius: 50%;
+}
